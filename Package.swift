@@ -6,6 +6,9 @@ let package = Package(
     platforms: [
        .macOS(.v13)
     ],
+    products: [
+        .executable(name: "PlayPixelerBackend", targets: ["App"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "4.89.0"),
         .package(url: "https://github.com/vapor/fluent.git", from: "4.0.0"),
