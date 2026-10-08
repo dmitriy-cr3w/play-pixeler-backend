@@ -1,9 +1,9 @@
-@testable import PlayPixelerBackend
+@testable import BranikoBackend
 import VaporTesting
 import Testing
 
 @Suite("App Tests")
-struct PlayPixelerBackendTests {
+struct BranikoBackendTests {
     @Test("Test Hello World Route")
     func helloWorld() async throws {
         try await withApp(configure: configure) { app in
