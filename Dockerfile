@@ -27,7 +27,7 @@ RUN mkdir /staging
 
 # Build the application, with optimizations, with static linking, and using jemalloc
 # N.B.: The static version of jemalloc is incompatible with the static Swift runtime.
-RUN --mount=type=cache,id=play-pixeler-swift-build,target=/build/.build \
+RUN --mount=type=cache,id=s/6f83eafa-4337-42f2-a5f4-6d4ca5f1281e-/build/.build,target=/build/.build \
     swift build -c release \
         --product PlayPixelerBackend \
         --static-swift-stdlib \
